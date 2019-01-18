@@ -18,7 +18,20 @@ This is a global scrollbars customizable theme for Firefox <= 64 and Chrome base
 
 Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) and then install the style:
 
-📦 [Install the usercss](https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/overlay-scrollbars.user.css) which supports automatic updates and customization.<br>
+📦 [Install the GitHub style usercss](https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/github-overlay-scrollbars.user.css) Will style your scrollbars just while visiting GitHub<br>
+📦 [Install the Global style usercss](https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/global-overlay-scrollbars.user.css) Will style your scrollbars globally<br>
+<br>
+Both support automatic updates and customization.<br>
+
+## Notes
+
+The Vivaldi browser has an `Overlay Scrollbars` option to enable it do the following.
+
+1. Type `vivaldi://flags/#overlay-scrollbars` into address bar
+2. Enable: Overlay Scrollbars
+![capture](./images/vivaldi.png)
+
+For more information visit [forum.vivaldi.net](https://forum.vivaldi.net/topic/21914/how-to-mod-webpage-scrollbar-with-custom-css/11)
 
 ## Contributions
 
