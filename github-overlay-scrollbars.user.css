@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name        Overlay Scrollbars
-@version     1.0.1
+@name        GitHub Overlay Scrollbars
+@version     1.0.2
 @description GitHub overlay scrollbars
 @namespace   StylishThemes
 @author      StylishThemes
@@ -15,23 +15,26 @@
 @advanced text webkit-scrollbar-width-height "Webkit scrollbar width/height" 5px
 ==/UserStyle== */
 /* Firefox and derivatives >= v64*/
-* {
+@-moz-document regexp("^https?://((gist|guides|help|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com") {
+/* Firefox and derivatives >= v64*/
+	* {
   scrollbar-color: /*[[custom-scrollbar-color]]*/ /*[[custom-track-color]]*/ !important;
   scrollbar-width: thin !important;
-}
-/* Chrome and derivatives*/
-::-webkit-scrollbar {
-  max-width: /*[[webkit-scrollbar-width-height]]*/ !important;
-  max-height: /*[[webkit-scrollbar-width-height]]*/ !important;
-  background: /*[[custom-track-color]]*/ !important;
-}
-::-webkit-scrollbar-track, ::-webkit-scrollbar-corner,
-::-webkit-scrollbar-track-piece {
-  background: /*[[custom-track-color]]*/ !important;
-}
-::-webkit-scrollbar-thumb {
-  background: /*[[custom-scrollbar-color]]*/ !important;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: /*[[webkit-scrollbar-hover]]*/ !important;
+	}
+	/* Chrome and derivatives*/
+	::-webkit-scrollbar {
+		max-width: /*[[webkit-scrollbar-width-height]]*/ !important;
+    max-height: /*[[webkit-scrollbar-width-height]]*/ !important;
+    background: /*[[custom-track-color]]*/ !important;
+  }
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner,
+  ::-webkit-scrollbar-track-piece {
+    background: /*[[custom-track-color]]*/ !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: /*[[custom-scrollbar-color]]*/ !important;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: /*[[webkit-scrollbar-hover]]*/ !important;
+  }
 }
