@@ -1,19 +1,18 @@
 /* ==UserStyle==
 @name        Overlay Scrollbars
-@version     1.0.0
-@description Global overlay scrollbars
+@version     1.0.1
+@description GitHub overlay scrollbars
 @namespace   StylishThemes
 @author      StylishThemes
-+co-authors  https://github.com/StylishThemes//Overlay-Scrollbars/graphs/contributors
++co-authors  https://github.com/StylishThemes/Overlay-Scrollbars/graphs/contributors
 @homepageURL https://github.com/StylishThemes/Overlay-Scrollbars
 @supportURL  https://github.com/StylishThemes/Overlay-Scrollbars/issues
+@updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/github-overlay-scrollbars.user.css
 @license     CC-BY-SA-4.0
-
 @advanced color custom-scrollbar-color "Scrollbar thumb color" rgba(140, 140, 140, .5)
 @advanced color webkit-scrollbar-hover "Webkit thumb hover" rgba(140, 140, 140, .5)
 @advanced color custom-track-color "Track color" transparent
 @advanced text webkit-scrollbar-width-height "Webkit scrollbar width/height" 5px
-
 ==/UserStyle== */
 /* Firefox and derivatives >= v64*/
 * {
