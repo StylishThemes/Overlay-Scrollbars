@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This is a global scrollbars customizable theme for Firefox <= 64 and Chrome based browsers
+Global and GitHub scrollbars customizable themes for Firefox <= 64 and Chrome based browsers
 
 ## Installation
 
