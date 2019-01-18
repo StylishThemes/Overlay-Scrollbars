@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name        Overlay Scrollbars
+@version     1.0.0
+@description Global overlay scrollbars
+@namespace   StylishThemes
+@author      StylishThemes
++co-authors  https://github.com/StylishThemes//Overlay-Scrollbars/graphs/contributors
+@homepageURL https://github.com/StylishThemes/Overlay-Scrollbars
+@supportURL  https://github.com/StylishThemes/Overlay-Scrollbars/issues
+@license     CC-BY-SA-4.0
+
+@advanced color custom-scrollbar-color "Scrollbar thumb color" rgba(140, 140, 140, .5)
+@advanced color webkit-scrollbar-hover "Webkit thumb hover" rgba(140, 140, 140, .5)
+@advanced color custom-track-color "Track color" transparent
+@advanced text webkit-scrollbar-width-height "Webkit scrollbar width/height" 5px
+
+==/UserStyle== */
+/* Firefox and derivatives >= v64*/
+* {
+  scrollbar-color: /*[[custom-scrollbar-color]]*/ /*[[custom-track-color]]*/ !important;
+  scrollbar-width: thin !important;
+}
+/* Chrome and derivatives*/
+::-webkit-scrollbar {
+  max-width: /*[[webkit-scrollbar-width-height]]*/ !important;
+  max-height: /*[[webkit-scrollbar-width-height]]*/ !important;
+  background: /*[[custom-track-color]]*/ !important;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background: /*[[custom-track-color]]*/ !important;
+}
+::-webkit-scrollbar-thumb {
+  background: /*[[custom-scrollbar-color]]*/ !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: /*[[webkit-scrollbar-hover]]*/ !important;
+}
