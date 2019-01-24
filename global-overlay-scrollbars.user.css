@@ -10,21 +10,20 @@
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/global-overlay-scrollbars.user.css
 @license     CC-BY-SA-4.0
 @preprocessor uso
-@advanced color custom-scrollbar-color        "Scrollbar thumb color" rgba(140, 140, 140, .5)
+@advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .8)
 @advanced color custom-track-color            "Scrollbar track color" transparent
-@advanced color webkit-scrollbar-hover        "Webkit thumb hover color" rgba(79, 140, 201, .8)
 @advanced text webkit-scrollbar-width-height  "Webkit scrollbar width/height" 6px
 @advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 1px
 ==/UserStyle== */
 :root {
   --custom-track-color: /*[[custom-track-color]]*/;
-  --custom-scrollbar-color: /*[[custom-scrollbar-color]]*/;
-  --webkit-scrollbar-hover: /*[[webkit-scrollbar-hover]]*/;
+  --custom-thumb-color: /*[[custom-thumb-color]]*/;
+  --webkit-scrollbar-hover: rgb(/*[[custom-thumb-color-rgb]]*/);
   --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
   --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
 }
 * {
-  scrollbar-color: var(--custom-scrollbar-color) var(--custom-track-color) !important;
+  scrollbar-color: var(--custom-thumb-color) var(--custom-track-color) !important;
   scrollbar-width: thin !important;
 }
 /* Chrome and derivatives*/
@@ -39,7 +38,7 @@
   background: var(--custom-track-color) !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--custom-scrollbar-color) !important;
+  background: var(--custom-thumb-color) !important;
   border-radius: var(--webkit-scrollbar-border-radius) !important;
 }
 ::-webkit-scrollbar-thumb:hover {
