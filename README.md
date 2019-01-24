@@ -1,3 +1,4 @@
+<h1 align="center">Overlay Scrollbars</h1>
 <p align="center">
   <a href="https://github.com/StylishThemes/Overlay-Scrollbars/tags">
     <img src="https://img.shields.io/github/tag/StylishThemes/Overlay-Scrollbars.svg?label=version&style=flat" alt="Version">
@@ -32,6 +33,14 @@ The Vivaldi browser has an `Overlay Scrollbars` option to enable it do the follo
 ![capture](./images/vivaldi.png)
 
 For more information visit [forum.vivaldi.net](https://forum.vivaldi.net/topic/21914/how-to-mod-webpage-scrollbar-with-custom-css/11)
+
+🐛 Bug: Vivaldi up to version 2.2.1388.37 (Stable channel) (64-bit) when not full screen windows size,<br>
+conflicts with scrollbars width less than 6px and cannot be dragged with mouse.
+
+## Known issues
+
+When using the global style in discord without any other themes the scrollbar widths in various panes,<br>
+some side panes don't respect the custom width set.
 
 ## Contributions
 
