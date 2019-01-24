@@ -13,7 +13,7 @@
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .8)
 @advanced color custom-track-color            "Scrollbar track color" transparent
 @advanced text webkit-scrollbar-width-height  "Webkit scrollbar width/height" 6px
-@advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 1px
+@advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 0px
 ==/UserStyle== */
 :root {
   --custom-track-color: /*[[custom-track-color]]*/;
