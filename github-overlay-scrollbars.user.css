@@ -17,13 +17,13 @@
 /* Firefox and derivatives >= v64*/
 @-moz-document regexp("^https?://((gist|guides|help|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com") {
 /* Firefox and derivatives >= v64*/
-	* {
-  scrollbar-color: /*[[custom-scrollbar-color]]*/ /*[[custom-track-color]]*/ !important;
-  scrollbar-width: thin !important;
-	}
-	/* Chrome and derivatives*/
-	::-webkit-scrollbar {
-		max-width: /*[[webkit-scrollbar-width-height]]*/ !important;
+  * {
+    scrollbar-color: /*[[custom-scrollbar-color]]*/ /*[[custom-track-color]]*/ !important;
+    scrollbar-width: thin !important;
+  }
+  /* Chrome and derivatives*/
+  ::-webkit-scrollbar {
+    max-width: /*[[webkit-scrollbar-width-height]]*/ !important;
     max-height: /*[[webkit-scrollbar-width-height]]*/ !important;
     background: /*[[custom-track-color]]*/ !important;
   }
