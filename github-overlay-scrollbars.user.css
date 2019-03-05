@@ -46,4 +46,18 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--webkit-scrollbar-hover) !important;
   }
+  /* GitHub https://github.com/StylishThemes/GitHub-Dark/issues/870 */
+  .integrations-select-repos::-webkit-scrollbar {
+    max-width: var(--webkit-scrollbar-width-height) !important;
+    width: var(--webkit-scrollbar-width-height) !important;
+  }
+  .integrations-select-repos::-webkit-scrollbar-thumb {
+    background: var(--custom-thumb-color) !important;
+    border: 0 !important;
+    border-radius: var(--webkit-scrollbar-border-radius) !important;
+    box-shadow: none !important;
+  }
+  .integrations-select-repos::-webkit-scrollbar-track-piece {
+    background: var(--custom-track-color) !important;
+  }
 }
