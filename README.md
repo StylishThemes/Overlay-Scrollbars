@@ -26,13 +26,13 @@ Both support automatic updates and customization.<br>
 
 ## Notes
 
-The Vivaldi browser has an `Overlay Scrollbars` option to enable it do the following.
+Chromium browsers have an `Overlay Scrollbars` option to enable it do the following.
 
-1. Type `vivaldi://flags/#overlay-scrollbars` into address bar
+1. Type `chrome://flags/#overlay-scrollbars` into address bar
 2. Enable: Overlay Scrollbars
 ![capture](./images/vivaldi.png)
 
-For more information visit [forum.vivaldi.net](https://forum.vivaldi.net/topic/21914/how-to-mod-webpage-scrollbar-with-custom-css/11)
+For more information visit [Vivaldi forum](https://forum.vivaldi.net/topic/21914/how-to-mod-webpage-scrollbar-with-custom-css/11)
 
 🐛 Bug: Vivaldi up to version 2.2.1388.37 (Stable channel) (64-bit) when not full screen windows size,<br>
 conflicts with scrollbars width less than 6px and cannot be dragged with mouse.
