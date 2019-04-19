@@ -60,4 +60,11 @@
   .integrations-select-repos::-webkit-scrollbar-track-piece {
     background: var(--custom-track-color) !important;
   }
+  /* Hide the scrollbars that the overlay scrollbars style adds */
+  [style*="overflow-y:auto"] {
+    scrollbar-width: none !important;
+  }
+  [style*="overflow-y:auto"]::-webkit-scrollbar {
+    display: none;
+  }
 }
