@@ -1,0 +1,14 @@
+{
+  "name": "Overlay-Scrollbars",
+  "version": "1.0.9",
+  "repository": "StylishThemes/Overlay-Scrollbars",
+  "homepage": "https://github.com/StylishThemes/Overlay-Scrollbars",
+  "devDependencies": {
+    "ver": "4.2.0"
+  },
+  "scripts": {
+    "patch": "npx ver -p patch *.user.css",
+    "minor": "npx ver -p minor *.user.css",
+    "major": "npx ver -p major *.user.css"
+  }
+}
