@@ -41,7 +41,7 @@
   --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
   --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
 }
-* {
+*:not(select) {
   scrollbar-color: var(--custom-thumb-color) var(--custom-track-color) !important;
   scrollbar-width: thin !important;
 }
