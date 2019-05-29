@@ -4,11 +4,15 @@
   "repository": "StylishThemes/Overlay-Scrollbars",
   "homepage": "https://github.com/StylishThemes/Overlay-Scrollbars",
   "devDependencies": {
+    "stylelint": "10.0.1",
+    "stylelint-config-standard": "18.3.0",
     "ver": "4.2.0"
   },
   "scripts": {
     "patch": "npx ver -p patch *.user.css",
     "minor": "npx ver -p minor *.user.css",
-    "major": "npx ver -p major *.user.css"
+    "major": "npx ver -p major *.user.css",
+    "stylelint": "stylelint --color -- *.user.css",
+    "test": "npm run stylelint"
   }
 }
