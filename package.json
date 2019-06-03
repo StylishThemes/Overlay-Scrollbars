@@ -1,6 +1,6 @@
 {
   "name": "Overlay-Scrollbars",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "repository": "StylishThemes/Overlay-Scrollbars",
   "homepage": "https://github.com/StylishThemes/Overlay-Scrollbars",
   "devDependencies": {
@@ -9,9 +9,9 @@
     "ver": "4.2.0"
   },
   "scripts": {
-    "patch": "npx ver -p patch *.user.css",
-    "minor": "npx ver -p minor *.user.css",
-    "major": "npx ver -p major *.user.css",
+    "patch": "npx ver -p patch global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
+    "minor": "npx ver -p minor global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
+    "major": "npx ver -p major global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
     "stylelint": "stylelint --color -- *.user.css",
     "test": "npm run stylelint"
   }
