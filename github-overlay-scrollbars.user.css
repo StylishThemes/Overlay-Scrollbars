@@ -12,6 +12,12 @@
 @preprocessor uso
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .8)
 @advanced color custom-track-color            "Scrollbar track color" transparent
+@advanced dropdown custom-width               "Scrollbar track width/height" {
+  thin "Firefox Thin" <<<EOT
+  thin EOT;
+  auto "Firefox Auto" <<<EOT
+  auto EOT;
+}
 @advanced text webkit-scrollbar-width-height  "Webkit scrollbar width/height" 6px
 @advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 0px
 ==/UserStyle== */
@@ -19,6 +25,7 @@
   :root {
     --custom-track-color: /*[[custom-track-color]]*/;
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
+    --custom-width: /*[[custom-width]]*/;
     --webkit-scrollbar-hover: rgb(/*[[custom-thumb-color-rgb]]*/);
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
@@ -26,7 +33,7 @@
   /* Firefox and derivatives >= v64*/
   *:not(select) {
     scrollbar-color: var(--custom-thumb-color) var(--custom-track-color) !important;
-    scrollbar-width: thin !important;
+    scrollbar-width: var(--custom-width) !important;
   }
   /* Chrome and derivatives*/
   ::-webkit-scrollbar {
