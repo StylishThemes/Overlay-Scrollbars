@@ -17,6 +17,8 @@
   thin EOT;
   auto "Firefox Auto" <<<EOT
   auto EOT;
+  none "Firefox None" <<<EOT
+  none EOT;
 }
 @advanced text webkit-scrollbar-width-height  "Webkit scrollbar width/height" 6px
 @advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 0px
