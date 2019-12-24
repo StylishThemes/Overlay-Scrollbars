@@ -72,6 +72,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--webkit-scrollbar-hover) !important;
 }
-:-webkit-full-screen {
-  overflow: auto !important;
-}
