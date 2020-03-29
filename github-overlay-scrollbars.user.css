@@ -11,7 +11,6 @@
 @license     CC-BY-SA-4.0
 @preprocessor uso
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .6)
-@advanced color custom-thumb-color-hover      "Scrollbar thumb hover color" rgba(79, 140, 201, .8)
 @advanced color custom-track-color            "Scrollbar track color" transparent
 @advanced dropdown custom-width               "Scrollbar track width/height" {
   thin "Firefox Thin" <<<EOT
@@ -21,6 +20,7 @@
   none "Firefox None" <<<EOT
   none EOT;
 }
+@advanced color custom-thumb-color-hover      "Webkit scrollbar thumb hover color" rgba(79, 140, 201, .8)
 @advanced text webkit-scrollbar-width-height  "Webkit scrollbar width/height" 6px
 @advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 0px
 ==/UserStyle== */
