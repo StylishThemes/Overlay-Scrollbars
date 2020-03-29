@@ -10,7 +10,8 @@
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/github-overlay-scrollbars.user.css
 @license     CC-BY-SA-4.0
 @preprocessor uso
-@advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .8)
+@advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .6)
+@advanced color custom-thumb-color-hover      "Scrollbar thumb hover color" rgba(79, 140, 201, .8)
 @advanced color custom-track-color            "Scrollbar track color" transparent
 @advanced dropdown custom-width               "Scrollbar track width/height" {
   thin "Firefox Thin" <<<EOT
@@ -28,7 +29,7 @@
     --custom-track-color: /*[[custom-track-color]]*/;
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
     --custom-width: /*[[custom-width]]*/;
-    --webkit-scrollbar-hover: rgb(/*[[custom-thumb-color-rgb]]*/);
+    --webkit-scrollbar-hover: rgb(/*[[custom-thumb-color-hover-rgb]]*/);
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
   }
