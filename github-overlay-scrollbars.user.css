@@ -4,7 +4,7 @@
 @description GitHub overlay scrollbars
 @namespace   StylishThemes
 @author      StylishThemes
-+co-authors  https://github.com/StylishThemes/Overlay-Scrollbars/graphs/contributors
+@co-authors  https://github.com/StylishThemes/Overlay-Scrollbars/graphs/contributors
 @homepageURL https://github.com/StylishThemes/Overlay-Scrollbars
 @supportURL  https://github.com/StylishThemes/Overlay-Scrollbars/issues
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/github-overlay-scrollbars.user.css
@@ -30,7 +30,7 @@
     --custom-track-color: /*[[custom-track-color]]*/;
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
     --custom-width: /*[[custom-width]]*/;
-    --webkit-scrollbar-thumb-hover: /*[[custom-thumb-color-hover]]*/);
+    --webkit-scrollbar-thumb-hover: /*[[custom-thumb-color-hover]]*/;
     --webkit-scrollbar-track-hover: /*[[custom-track-color-hover]]*/;
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
