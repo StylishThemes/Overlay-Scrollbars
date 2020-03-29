@@ -29,7 +29,7 @@
     --custom-track-color: /*[[custom-track-color]]*/;
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
     --custom-width: /*[[custom-width]]*/;
-    --webkit-scrollbar-hover: rgb(/*[[custom-thumb-color-hover-rgb]]*/);
+    --webkit-scrollbar-thumb-hover: rgb(/*[[custom-thumb-color-hover-rgb]]*/);
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
   }
@@ -54,7 +54,7 @@
     border-radius: var(--webkit-scrollbar-border-radius) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--webkit-scrollbar-hover) !important;
+    background: var(--webkit-scrollbar-thumb-hover) !important;
   }
   /* GitHub https://github.com/StylishThemes/GitHub-Dark/issues/870 */
   .integrations-select-repos::-webkit-scrollbar {
