@@ -4,10 +4,10 @@
   "repository": "StylishThemes/Overlay-Scrollbars",
   "homepage": "https://github.com/StylishThemes/Overlay-Scrollbars",
   "devDependencies": {
-    "stylelint": "^12.0.1",
-    "stylelint-config-standard": "^19.0.0",
-    "updates": "^9.3.3",
-    "versions": "^7.0.5"
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0",
+    "updates": "^10.2.6",
+    "versions": "^8.2.7"
   },
   "scripts": {
     "patch": "npx versions -p patch global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
