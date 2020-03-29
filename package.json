@@ -10,11 +10,11 @@
     "versions": "^8.2.7"
   },
   "scripts": {
-    "patch": "npx versions -p patch global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
-    "minor": "npx versions -p minor global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
-    "major": "npx versions -p major global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
+    "patch": "versions -p patch global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
+    "minor": "versions -p minor global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
+    "major": "versions -p major global-overlay-scrollbars.user.css github-overlay-scrollbars.user.css",
     "stylelint": "stylelint --color -- *.user.css",
     "test": "npm run stylelint",
-    "update": "npx updates -cu && npm install"
+    "update": "updates -cu && npm install"
   }
 }
