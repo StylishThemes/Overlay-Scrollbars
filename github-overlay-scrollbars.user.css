@@ -11,6 +11,7 @@
 @license     CC-BY-SA-4.0
 @preprocessor uso
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .6)
+@advanced color custom-track-color-hover      "Webkit scrollbar track hover color" transparent
 @advanced color custom-track-color            "Scrollbar track color" transparent
 @advanced dropdown custom-width               "Scrollbar track width/height" {
   thin "Firefox Thin" <<<EOT
@@ -30,6 +31,7 @@
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
     --custom-width: /*[[custom-width]]*/;
     --webkit-scrollbar-thumb-hover: rgb(/*[[custom-thumb-color-hover-rgb]]*/);
+    --webkit-scrollbar-track-hover: /*[[custom-track-color-hover]]*/;
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
   }
@@ -52,6 +54,11 @@
   ::-webkit-scrollbar-thumb {
     background: var(--custom-thumb-color) !important;
     border-radius: var(--webkit-scrollbar-border-radius) !important;
+  }
+  ::-webkit-scrollbar-corner:hover,
+  ::-webkit-scrollbar-track:hover,
+  ::-webkit-scrollbar-track-piece:hover {
+    background: var(--webkit-scrollbar-track-hover) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: var(--webkit-scrollbar-thumb-hover) !important;
