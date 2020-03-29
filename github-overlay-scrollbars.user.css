@@ -30,7 +30,7 @@
     --custom-track-color: /*[[custom-track-color]]*/;
     --custom-thumb-color: /*[[custom-thumb-color]]*/;
     --custom-width: /*[[custom-width]]*/;
-    --webkit-scrollbar-thumb-hover: rgb(/*[[custom-thumb-color-hover-rgb]]*/);
+    --webkit-scrollbar-thumb-hover: /*[[custom-thumb-color-hover]]*/);
     --webkit-scrollbar-track-hover: /*[[custom-track-color-hover]]*/;
     --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
     --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
