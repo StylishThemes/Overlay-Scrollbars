@@ -81,7 +81,7 @@
   background: var(--webkit-scrollbar-thumb-hover) !important;
 }
 @-moz-document regexp("^https?://(www\.)?instagram.com/+.*") {
-  #react-root div[role="presentation"] {
+  div[role="presentation"] {
     overflow-x: hidden;
   }
 }
