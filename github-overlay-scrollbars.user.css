@@ -9,7 +9,7 @@
 @supportURL  https://github.com/StylishThemes/Overlay-Scrollbars/issues
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/github-overlay-scrollbars.user.css
 @license     CC-BY-SA-4.0
-@preprocessor uso
+@preprocessor default
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .6)
 @advanced color custom-track-color-hover      "Webkit scrollbar track hover color" transparent
 @advanced color custom-track-color            "Scrollbar track color" transparent
@@ -26,15 +26,6 @@
 @advanced text webkit-scrollbar-border-radius "Webkit scrollbar border radius" 0px
 ==/UserStyle== */
 @-moz-document regexp("^https?://((gist|guides|help|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com") {
-  :root {
-    --custom-track-color: /*[[custom-track-color]]*/;
-    --custom-thumb-color: /*[[custom-thumb-color]]*/;
-    --custom-width: /*[[custom-width]]*/;
-    --webkit-scrollbar-thumb-hover: /*[[custom-thumb-color-hover]]*/;
-    --webkit-scrollbar-track-hover: /*[[custom-track-color-hover]]*/;
-    --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
-    --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
-  }
   /* Firefox and derivatives >= v64*/
   *:not(select) {
     scrollbar-color: var(--custom-thumb-color) var(--custom-track-color) !important;
@@ -58,10 +49,10 @@
   ::-webkit-scrollbar-corner:hover,
   ::-webkit-scrollbar-track:hover,
   ::-webkit-scrollbar-track-piece:hover {
-    background: var(--webkit-scrollbar-track-hover) !important;
+    background: var(--custom-track-color-hover) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--webkit-scrollbar-thumb-hover) !important;
+    background: var(--custom-thumb-color-hover) !important;
   }
   /* GitHub https://github.com/StylishThemes/GitHub-Dark/issues/870 */
   .integrations-select-repos::-webkit-scrollbar {

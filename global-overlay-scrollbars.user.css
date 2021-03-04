@@ -9,7 +9,7 @@
 @supportURL  https://github.com/StylishThemes/Overlay-Scrollbars/issues
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/global-overlay-scrollbars.user.css
 @license     CC-BY-SA-4.0
-@preprocessor uso
+@preprocessor default
 @advanced color custom-thumb-color            "Scrollbar thumb color" rgba(79, 140, 201, .6)
 @advanced color custom-track-color            "Scrollbar track color" transparent
 @advanced dropdown custom-width               "Scrollbar track width/height" {
@@ -44,15 +44,6 @@
   disabled EOT;
 }
 ==/UserStyle== */
-:root {
-  --custom-track-color: /*[[custom-track-color]]*/;
-  --custom-thumb-color: /*[[custom-thumb-color]]*/;
-  --custom-width: /*[[custom-width]]*/;
-  --webkit-scrollbar-thumb-hover: /*[[custom-thumb-color-hover]]*/;
-  --webkit-scrollbar-track-hover: /*[[custom-track-color-hover]]*/;
-  --webkit-scrollbar-width-height: /*[[webkit-scrollbar-width-height]]*/;
-  --webkit-scrollbar-border-radius: /*[[webkit-scrollbar-border-radius]]*/;
-}
 *:not(select) {
   scrollbar-color: var(--custom-thumb-color) var(--custom-track-color) !important;
   scrollbar-width: var(--custom-width) !important;
@@ -75,10 +66,10 @@
 ::-webkit-scrollbar-corner:hover,
 ::-webkit-scrollbar-track:hover,
 ::-webkit-scrollbar-track-piece:hover {
-  background: var(--webkit-scrollbar-track-hover) !important;
+  background: var(--custom-track-color-hover) !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--webkit-scrollbar-thumb-hover) !important;
+  background: var(--custom-thumb-color-hover) !important;
 }
 @-moz-document regexp("^https?://(www\.)?instagram.com/+.*") {
   div[role="presentation"] {
